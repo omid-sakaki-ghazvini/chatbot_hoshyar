@@ -2,11 +2,10 @@ from langchain_community.document_loaders import PyPDFium2Loader
 from transformers import AutoModelForQuestionAnswering, AutoTokenizer, pipeline
 import streamlit as st
 
-model_name_or_path = "m3hrdadfi/xlmr-large-qa-fa"
 pdfFilePath = 'dr_ghalibaf.pdf'
 pathFileForModel = 'document_for_chatBot.txt'
 
-nlp = pipeline('question-answering', model=model_name_or_path, tokenizer=model_name_or_path)
+pipeline = pipeline(task = 'question-answering', model="m3hrdadfi/xlmr-large-qa-fa", "m3hrdadfi/xlmr-large-qa-fa")
 
 st.title("سلام، من یک هوش مصنوعی هستم که میتوانم به سوال شما در رابطه با کارنامه دکتر قالیباف پاسخ بدهم")
 
@@ -40,7 +39,7 @@ question = st.text_area("لطفا سوال خود را بپرسید:")
 
 def chatBot(question, context):
     kwargs = {}
-    r = nlp(question=question, context=context, **kwargs)    
+    r = pipeline(question=question, context=context, **kwargs)    
     answer = " ".join([token.strip() for token in r["answer"].strip().split() if token.strip()]) 
     return(answer)  
       
