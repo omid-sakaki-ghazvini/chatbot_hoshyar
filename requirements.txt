@@ -1,4 +1,5 @@
 transformers
+streamlit
 tf-keras
 tensorflow
 pypdfium2
