@@ -6,3 +6,4 @@ pypdfium2
 langchain-core==0.1.23
 langchain-community==0.0.19
 langchain==0.1.6
+tensorrt
