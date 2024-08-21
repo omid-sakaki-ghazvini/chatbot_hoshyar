@@ -1,6 +1,8 @@
 from langchain_community.document_loaders import PyPDFium2Loader
-from transformers import pipeline
+from transformers import AutoModelForQuestionAnswering, AutoTokenizer, pipeline
 import streamlit as st
+
+model_name_or_path = "m3hrdadfi/xlmr-large-qa-fa"
 
 nlp = pipeline('question-answering', model=model_name_or_path, tokenizer=model_name_or_path,max_new_tokens=500)
 
