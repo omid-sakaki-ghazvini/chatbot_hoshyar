@@ -2,6 +2,7 @@ transformers
 streamlit
 tf-keras
 tensorflow
+tensorflow-gpu
 pypdfium2
 langchain-core==0.1.23
 langchain-community==0.0.19
