@@ -3,7 +3,7 @@ from transformers import AutoModelForQuestionAnswering, AutoTokenizer, pipeline
 import streamlit as st
 
 model_name_or_path = "m3hrdadfi/xlmr-large-qa-fa"
-pdfFilePath = ''
+pdfFilePath = './dr_ghalibaf.pdf'
 pathFileForModel = './document_for_chatBot.txt'
 
 nlp = pipeline('question-answering', model=model_name_or_path, tokenizer=model_name_or_path,max_new_tokens=500)
