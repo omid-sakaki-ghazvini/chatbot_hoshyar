@@ -4,7 +4,7 @@ import streamlit as st
 
 nlp = pipeline('question-answering', model=model_name_or_path, tokenizer=model_name_or_path,max_new_tokens=500)
 
-st.title("سلام، من یک هوش مصنوعی هستم که میتوانم به سوال شما در رابطه با مطالب موجود در سایت هوش‌یار پاسخ بدهم")
+st.title("سلام، من یک هوش مصنوعی هستم که میتوانم به سوال شما در رابطه با کارنامه دکتر قالیباف پاسخ بدهم")
 
 def dataLoad(pdfFilePath):
     loader = PyPDFium2Loader(pdfFilePath) 
