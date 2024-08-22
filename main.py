@@ -14,6 +14,7 @@ st.markdown("""
 .big-font {
     font-size:30px !important;
     text-align: right;
+    color: red;
 }
 .large-font {
     font-size:20px !important;
