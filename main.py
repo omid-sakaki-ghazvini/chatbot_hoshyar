@@ -2,8 +2,8 @@ from transformers import AutoModelForQuestionAnswering, AutoTokenizer, pipeline
 import streamlit as st
 
 pathFileForModel = 'document_for_chatBot.txt'
-
-pipeline = pipeline('question-answering', model="m3hrdadfi/xlmr-large-qa-fa", tokenizer="m3hrdadfi/xlmr-large-qa-fa")
+model_name_or_path = "m3hrdadfi/xlmr-large-qa-fa"
+nlp = pipeline('question-answering', model=model_name_or_path, tokenizer=model_name_or_path)
 
 st.title("سلام، من یک هوش مصنوعی هستم که میتوانم به سوال شما در رابطه با کارنامه دکتر قالیباف پاسخ بدهم")
 
@@ -22,7 +22,7 @@ question = st.text_area("لطفا سوال خود را بپرسید:")
 
 def chatBot(question, context):
     kwargs = {}
-    r = pipeline(question=question, context=context, **kwargs)    
+    r = nlp(question=question, context=context, **kwargs)    
     answer = " ".join([token.strip() for token in r["answer"].strip().split() if token.strip()]) 
     return(answer)  
       
