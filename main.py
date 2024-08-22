@@ -7,8 +7,6 @@ tokenizer = AutoTokenizer.from_pretrained("m3hrdadfi/xlmr-large-qa-fa")
 model = AutoModelForQuestionAnswering.from_pretrained("m3hrdadfi/xlmr-large-qa-fa")
 pipe = pipeline("question-answering", model=model, tokenizer=tokenizer )
 
-st.image("1.jpg")
-
 st.set_page_config(layout="wide")
 
 st.markdown("""
@@ -30,6 +28,8 @@ st.markdown("""
 }
 </style>
 """, unsafe_allow_html=True)
+
+st.image("1.jpg")
 
 st.markdown('<p class="big-font">سلام، من یک هوش مصنوعی هستم که میتوانم به سوال شما در رابطه با کارنامه دکتر قالیباف پاسخ بدهم</p>', unsafe_allow_html=True)
 
