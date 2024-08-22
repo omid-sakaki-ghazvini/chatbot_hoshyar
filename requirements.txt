@@ -1,4 +1,4 @@
 transformers
 streamlit
 tf-keras
-tensorflow-gpu==2.8.0
+tensorflow-gpu
