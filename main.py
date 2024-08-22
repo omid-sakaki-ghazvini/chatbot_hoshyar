@@ -29,7 +29,7 @@ def chatBot(question, context):
       
         
 if question:
-    st.write("<h5 dir='rtl'>سوال شما :</h5>")
+    st.write("<h5>سوال شما :</h5>")
     st.write(question)
     st.write("پاسخ سوال شما براساس داده هایی که من به آن دسترسی دارم:")
     response = chatBot(question, context)
