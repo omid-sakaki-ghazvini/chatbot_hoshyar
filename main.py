@@ -7,6 +7,7 @@ tokenizer = AutoTokenizer.from_pretrained("m3hrdadfi/xlmr-large-qa-fa")
 model = AutoModelForQuestionAnswering.from_pretrained("m3hrdadfi/xlmr-large-qa-fa")
 pipe = pipeline("question-answering", model=model, tokenizer=tokenizer )
 
+st.set_page_config(layout="wide")
 st.markdown("""
 <style>
 .big-font {
