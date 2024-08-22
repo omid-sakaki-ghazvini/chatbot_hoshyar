@@ -7,8 +7,17 @@ tokenizer = AutoTokenizer.from_pretrained("m3hrdadfi/xlmr-large-qa-fa")
 model = AutoModelForQuestionAnswering.from_pretrained("m3hrdadfi/xlmr-large-qa-fa")
 pipe = pipeline("question-answering", model=model, tokenizer=tokenizer )
 
-st.title("سلام، من یک هوش مصنوعی هستم که میتوانم به سوال شما در رابطه با کارنامه دکتر قالیباف پاسخ بدهم")
+st.set_page_config(layout="wide")
 
+st.markdown("""
+<style>
+.big-font {
+    font-size:300px !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown('<p class="big-font">Hello World !!</p>', unsafe_allow_html=True)
 
 with open(pathFileForModel, 'r', encoding='utf-8') as file:
     context = file.readlines()
