@@ -29,7 +29,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.image("1.jpg", use_column_width="auto", width=500)
+st.image("1.jpg", use_column_width="auto", width="500px")
 
 st.markdown('<p class="big-font">سلام، من یک هوش مصنوعی هستم که میتوانم به سوال شما در رابطه با کارنامه دکتر قالیباف پاسخ بدهم</p>', unsafe_allow_html=True)
 
