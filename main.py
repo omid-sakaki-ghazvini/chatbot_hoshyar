@@ -13,7 +13,7 @@ st.markdown("""
 <style>
 .big-font {
     font-size:30px !important;
-    justify-content: "center"
+    color: blue;
 }
 </style>
 """, unsafe_allow_html=True)
