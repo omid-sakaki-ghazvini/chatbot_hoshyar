@@ -26,9 +26,6 @@ st.markdown("""
     text-align: right;
     color: red;
 }
-.big-color {
-    font-size:30px !important;
-}
 </style>
 """, unsafe_allow_html=True)
 
