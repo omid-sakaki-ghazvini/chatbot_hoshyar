@@ -1,4 +1,4 @@
 transformers
 streamlit
 tf-keras
-tensorflow-gpu
+tensorflow
