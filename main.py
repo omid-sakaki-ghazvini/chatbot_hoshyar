@@ -12,12 +12,22 @@ st.set_page_config(layout="wide")
 st.markdown("""
 <style>
 .big-font {
+    font-size:40px !important;
+    text-justify: "center";
+}
+.large-font {
+    font-size:30px !important;
+}
+.small-font {
+    font-size:20px !important;
+}
+.big-color {
     font-size:30px !important;
 }
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown('<p class="big-font">Hello World !!</p>', unsafe_allow_html=True)
+st.markdown('<p class="big-font">سلام، من یک هوش مصنوعی هستم که میتوانم به سوال شما در رابطه با کارنامه دکتر قالیباف پاسخ بدهم</p>', unsafe_allow_html=True)
 
 with open(pathFileForModel, 'r', encoding='utf-8') as file:
     context = file.readlines()
