@@ -10,12 +10,10 @@ pipe = pipeline("question-answering", model=model, tokenizer=tokenizer )
 
 st.title("سلام، من یک هوش مصنوعی هستم که میتوانم به سوال شما در رابطه با کارنامه دکتر قالیباف پاسخ بدهم")
 
-if loadData :
-    with open(pathFileForModel, 'r', encoding='utf-8') as file:
-        context = file.readlines()
-        context = [''.join(context)]
-        print(">> data load")
-        context = context[0]
+with open(pathFileForModel, 'r', encoding='utf-8') as file:
+    context = file.readlines()
+    context = [''.join(context)]
+    context = context[0]
 
 
 
