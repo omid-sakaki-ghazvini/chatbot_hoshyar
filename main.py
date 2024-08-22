@@ -1,9 +1,9 @@
-from transformers import AutoModelForQuestionAnswering, AutoTokenizer, pipeline
+from transformers import pipeline
 import streamlit as st
 
 pathFileForModel = 'document_for_chatBot.txt'
 model_name_or_path = "m3hrdadfi/xlmr-large-qa-fa"
-nlp = pipeline('question-answering', model=model_name_or_path, tokenizer=model_name_or_path)
+nlp = pipeline('question-answering', model=model_name_or_path)
 
 st.title("سلام، من یک هوش مصنوعی هستم که میتوانم به سوال شما در رابطه با کارنامه دکتر قالیباف پاسخ بدهم")
 
