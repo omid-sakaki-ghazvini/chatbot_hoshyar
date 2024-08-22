@@ -50,8 +50,11 @@ def chatBot(question, context):
       
         
 if question:
-    st.markdown('<p class="small-font">سوال شما: </p>', unsafe_allow_html=True)
-    st.write(question)
-    st.write("پاسخ سوال شما براساس داده هایی که من به آن دسترسی دارم:")
+    st.markdown('<p class="small-font">سوال شما:</p>', unsafe_allow_html=True)
+    st.markdown('<p class="small-font">{question}</p>', unsafe_allow_html=True)
+    #st.write(question)
+    st.markdown('<p class="large-font">پاسخ سوال شما براساس داده هایی که من به آن دسترسی دارم:</p>', unsafe_allow_html=True)
+    #st.write("پاسخ سوال شما براساس داده هایی که من به آن دسترسی دارم:")
     response = chatBot(question, context)
-    st.write(response)
+    st.markdown('<p class="large-font">{response}</p>', unsafe_allow_html=True)
+    #st.write(response)
