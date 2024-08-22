@@ -3,7 +3,7 @@ import streamlit as st
 
 pathFileForModel = 'document_for_chatBot.txt'
 
-tokenizer = AutoTokenizer.from_pretrained("m3hrdadfi/xlmr-large-qa-fa", clean_up_tokenization_spaces=True)
+tokenizer = AutoTokenizer.from_pretrained("m3hrdadfi/xlmr-large-qa-fa", clean_up_tokenization_spaces=False)
 model = AutoModelForQuestionAnswering.from_pretrained("m3hrdadfi/xlmr-large-qa-fa")
 pipe = pipeline("question-answering", model=model, tokenizer=tokenizer )
 
