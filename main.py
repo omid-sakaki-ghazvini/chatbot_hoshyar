@@ -12,14 +12,14 @@ st.set_page_config(layout="wide")
 st.markdown("""
 <style>
 .big-font {
-    font-size:40px !important;
+    font-size:30px !important;
     text-justify: "center";
 }
 .large-font {
-    font-size:30px !important;
+    font-size:20px !important;
 }
 .small-font {
-    font-size:20px !important;
+    font-size:10px !important;
 }
 .big-color {
     font-size:30px !important;
