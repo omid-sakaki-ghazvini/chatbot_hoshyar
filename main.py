@@ -31,7 +31,7 @@ st.markdown("""
 
 st.image("1.jpg", use_column_width="auto")
 
-st.markdown('<p class="big-font">سلام، من یک هوش مصنوعی هستم که میتوانم به سوال شما در رابطه با کارنامه دکتر قالیباف پاسخ بدهم</p>', unsafe_allow_html=True)
+st.markdown('<p class="big-font">سلام، من یک هوش مصنوعی هستم که میتوانم به سوال شما در رابطه با مطالب موجود در سایت هوش‌یار پاسخ بدهم</p>', unsafe_allow_html=True)
 
 with open(pathFileForModel, 'r', encoding='utf-8') as file:
     context = file.readlines()
