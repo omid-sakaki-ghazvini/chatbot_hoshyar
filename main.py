@@ -40,7 +40,7 @@ with open(pathFileForModel, 'r', encoding='utf-8') as file:
 
 
 
-question = st.text_area("لطفا سوال خود را بپرسید:")    
+question = st.text_area('<p class="big-font">لطفا سوال خود را بپرسید:</p>')    
 
 
 
