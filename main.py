@@ -13,8 +13,8 @@ st.markdown("""
 <style>
 .big-font {
     font-size:30px !important;
-    text-align: right;
-    color: blue;
+    text-align center;
+    color: red;
 }
 .large-font {
     font-size:20px !important;
