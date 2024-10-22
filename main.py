@@ -31,7 +31,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 components.html(
-    "<p><images src={'1.jpg'}/></p>"
+    "<p><image src='1.jpg'/></p>"
 )
 
 st.image("1.jpg", use_column_width="never")
