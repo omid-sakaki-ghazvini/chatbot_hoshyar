@@ -39,8 +39,8 @@ with open(pathFileForModel, 'r', encoding='utf-8') as file:
     context = context[0]
 
 
-
-question = st.text_area('<p class="big-font">لطفا سوال خود را بپرسید:</p>')    
+st.markdown('<p class="big-font">لطفا سوال خود را در کادر زیر وارد نمایید:</p>', unsafe_allow_html=True)
+question = st.text_area()    
 
 
 
