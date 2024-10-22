@@ -44,7 +44,7 @@ with open(pathFileForModel, 'r', encoding='utf-8') as file:
     context = context[0]
 
 
-st.markdown('<p class="small-font">لطفا سوال خود را در کادر زیر وارد نمایید:</p>', unsafe_allow_html=True)
+st.markdown('<p class="small-font">:لطفا سوال خود را در کادر زیر وارد نمایید</p>', unsafe_allow_html=True)
 question = st.text_area('')    
 
 
