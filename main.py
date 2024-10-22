@@ -29,7 +29,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.image("1.jpg", use_column_width="auto")
+st.image("1.jpg",width=160, use_column_width="auto")
 
 st.markdown('<p class="big-font">سلام، من یک هوش مصنوعی هستم که میتوانم به سوال شما در رابطه با مطالب موجود در سایت هوش‌یار پاسخ بدهم</p>', unsafe_allow_html=True)
 
