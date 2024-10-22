@@ -1,5 +1,6 @@
 from transformers import pipeline, AutoTokenizer, AutoModelForQuestionAnswering
 import streamlit as st
+import streamlit.components.v1 as components
 
 pathFileForModel = 'document_for_chatBot.txt'
 
@@ -28,6 +29,10 @@ st.markdown("""
 }
 </style>
 """, unsafe_allow_html=True)
+
+components.html(
+    "<p><image src='1.jpg'/</p>"
+)
 
 st.image("1.jpg", use_column_width="never")
 
