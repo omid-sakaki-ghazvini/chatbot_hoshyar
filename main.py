@@ -30,11 +30,11 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-components.html(
-    "<p><image src='1.jpg'/></p>"
-)
+#components.html(
+#    "<p><image src='1.jpg'/></p>"
+#)
 
-st.image("1.jpg", use_column_width="never")
+#st.image("1.jpg", use_column_width="never")
 
 st.markdown('<p class="big-font">سلام، من یک هوش مصنوعی هستم که میتوانم به سوال شما در رابطه با مطالب موجود در سایت هوش‌یار پاسخ بدهم</p>', unsafe_allow_html=True)
 
