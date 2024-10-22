@@ -13,7 +13,7 @@ st.markdown("""
 <style>
 .big-font {
     font-size:30px !important;
-    text-align center;
+    text-align: center;
     color: red;
 }
 .large-font {
