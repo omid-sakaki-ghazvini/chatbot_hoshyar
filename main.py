@@ -15,7 +15,7 @@ st.markdown("""
 .big-font {
     font-size:30px !important;
     text-align: center;
-    color: red;
+    color: white;
 }
 .large-font {
     font-size:20px !important;
@@ -25,7 +25,7 @@ st.markdown("""
 .small-font {
     font-size:20px !important;
     text-align: right;
-    color: green;
+    color: red;
 }
 </style>
 """, unsafe_allow_html=True)
