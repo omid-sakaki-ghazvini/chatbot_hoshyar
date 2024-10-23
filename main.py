@@ -20,11 +20,11 @@ st.markdown("""
 .large-font {
     font-size:20px !important;
     text-align: right;
-    color: blue;
+    color: white;
 }
 .small-font {
     font-size:20px !important;
-    text-align: right;
+    text-align: white;
     color: blue;
 }
 </style>
@@ -59,6 +59,6 @@ def chatBot(question, context):
 if question:
     st.markdown('<p class="small-font">سوال شما:</p>', unsafe_allow_html=True)
     st.write(question)
-    st.markdown('<p class="large-font">پاسخ سوال شما براساس داده هایی که من به آن دسترسی دارم:</p>', unsafe_allow_html=True)
+    st.markdown('<p class="large-font">:پاسخ سوال شما براساس داده هایی که من به آن دسترسی دارم</p>', unsafe_allow_html=True)
     response = chatBot(question, context)
     st.write(response)
